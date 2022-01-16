@@ -11,15 +11,22 @@ body {
 	background-color: #DDD;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Merriweather', serif;
+}
+
+p, span, ul, ol, li, i {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .container {
-	max-width: 700px;
+	margin: 0 1em;
 	height: auto;
 	border-radius: 10px;
 	background-color: #fff;
 	overflow: hidden;
 	border: 1px solid gray;
-	box-shadow: 0 0 5px black;
-	box-shadow: 0 0 20px black;
+	box-shadow: 0 0 20px #616161;
 }
 
 header, footer {
@@ -35,21 +42,18 @@ header, footer {
 header img {
 	max-width: 100px;
 	height: auto;
-	box-shadow: 0px 0px 5px black;
+	box-shadow: 0px 0px 5px #616161;
 }
 
 header h1 {
-	text-shadow: 0px 0px 10px black;
+	margin-left: 1em;
 }
 
 main {
 	padding: 0 1em;
 }
 
-main h1 {
-	margin-bottom: 0;
-	text-shadow: 0px 0px 3px black;
-}
+
 
 hr {
 	margin: 0;

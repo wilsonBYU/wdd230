@@ -1,0 +1,54 @@
+header {
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    padding: 0.5 1em;
+}
+
+section > header {
+    background-color: rgb(0, 185, 185);
+    color: white;
+    text-align: left;
+    padding: 0.5em;
+}
+
+section > header > h3 {
+    margin: 0;
+}
+
+main {
+    margin: 0.5em;
+}
+
+main > section {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0.5em 0.5em;
+    border: 1px gray solid;
+    background-color: rgb(236, 236, 236);
+}
+
+main > section > section {
+    padding: 0.5em;
+}
+
+main > section > section > div {
+    width: 100%;
+}
+
+main > section > section > div > img {
+    width: 100%;
+    height: auto;
+    border: 1px rgb(196, 196, 196) solid;
+    box-shadow: 0 0 5px rgb(192, 192, 192);
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    background-color: darkcyan;
+}
+
+footer > p {
+    color: white;
+}
