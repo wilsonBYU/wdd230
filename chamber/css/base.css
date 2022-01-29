@@ -1,0 +1,218 @@
+
+:root {
+    --header-background: #383838;
+    --memu-background-color: #808080;
+    --header-text-color: #fff;
+    --button-hover-color: #2BD9FE;
+    --header3-color: #fe7f2b;
+    --body-background: #f3f3e9;
+    --border-color: #d8d8d8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+p, li, a, span {
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-background);
+}
+
+header {
+    background-color: var(--header-background);
+    color: var(--header-text-color);
+    display: grid;
+    padding: 0.5em;
+    gap: 1em;
+    position: relative;
+}
+
+header .logo-container {
+    display: flex;
+    grid-column: 1/2;
+
+}
+
+.logo-container > img {
+    height: 40px;
+    width: auto;
+}
+
+.logo-container > .logo-text > h1,
+.logo-container > .logo-text > h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container > .logo-text > h1 {
+    font-size: 1.2em;
+}
+
+.logo-container > .logo-text > h3 {
+    font-size: 0.7em;
+}
+
+.social {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+
+.social > a > img {
+    height: 25px;
+}
+
+header > nav {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    background-color: var(--memu-background-color);
+    border-radius: 0 0 3px 3px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    opacity: 0%;
+    height: 0px;
+    overflow: hidden;
+    transition: opacity 500ms ease-in-out;
+}
+
+.open {
+    opacity: 100%;
+    height: auto;
+}
+
+header > nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header > nav > ul > li > a {
+    display: block;
+    text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+    color: var(--header-text-color);
+}
+
+header > nav > ul > li > a:hover {
+    background-color: var(--button-hover-color);
+    color: var(--header-background);
+}
+
+header > button { 
+    grid-column: 3/4;
+    grid-row: 1/2;
+    font-size: 2em;
+    background-color: transparent;
+    border: none;
+    color: var(--header-text-color);
+}
+
+header > .time {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    background-color: var(--memu-background-color);
+    color: var(--header-text-color);
+    padding: 0.5em;
+    border-radius: 3px;
+    text-align: center;
+}
+
+main {
+    padding: 0.5em;
+    display: grid;
+    row-gap: 1em;
+}
+
+main > section {
+    background-color: var(--header-text-color);
+    height: 200px;
+    padding: 1em;
+    border: 1px solid var(--border-color);
+}
+
+main > section > p {
+    margin: 0;
+}
+
+main > section:nth-child(1) {
+    grid-row: 1/2;
+}
+main > section:nth-child(2) {
+    grid-row: 2/3;
+}
+main > section:nth-child(3) {
+    grid-row: 3/4;
+}
+main > section:nth-child(4) {
+    grid-row: 4/5;
+}
+main > section:nth-child(5) {
+    grid-row: 5/6;
+}
+main > section:nth-child(6) {
+    grid-row: 6/7;
+    height: auto;
+}
+
+main > section:nth-child(6) > section {
+    height: 200px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+main > section:nth-child(6) > section > p {
+    margin: 0;
+}
+
+footer {
+    background-color: var(--header-background);
+    color: var(--border-color);
+    padding: 1em;
+}
+
+footer > .img-container {
+    display: flex;
+    justify-content: center;
+}
+
+footer > .img-container > img {
+    height: 50px;
+    display: inline-block;
+    width: auto;
+}
+
+.logo-text > h1,
+.logo-text > h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.logo-text > h1 {
+    font-size: 1.4em;
+}
+
+.logo-text > h2 {  
+    font-size: 1em; 
+}
+
+footer > p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
