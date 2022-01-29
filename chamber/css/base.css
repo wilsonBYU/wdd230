@@ -138,7 +138,7 @@ main > section {
     border: 1px solid var(--border-color);
 }
 
-main > section > p {
+main > section > h4 {
     margin: 0;
 }
 
@@ -169,7 +169,7 @@ main > section:nth-child(6) > section {
     padding: 1em;
 }
 
-main > section:nth-child(6) > section > p {
+main > section:nth-child(6) > section > h4 {
     margin: 0;
 }
 
