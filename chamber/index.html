@@ -12,7 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <title>Guatemala Chamber of Commerce - WDD210</title>
 </head>
-<body onload="getWeather()">
+<body onload="getWeather(); displayMessage()">
+    <div id="announce">
+        <p>
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </p>
+        <span onclick="displayMessage()">x</span>
+    </div>
     <header>
         <div class="logo-container">
             <img src="images/logo.png" alt="Guatemala chamber of commerce logo">

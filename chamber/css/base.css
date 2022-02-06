@@ -31,6 +31,28 @@ body {
     background-color: var(--body-background);
 }
 
+.anounceOpen {
+    display: flex;
+    height: 50px;
+    width: 10px;
+}
+
+#announce {
+    background-color: var(--header3-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+#announce > span {
+    right: 2em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
 header {
     background-color: var(--header-background);
     color: var(--header-text-color);

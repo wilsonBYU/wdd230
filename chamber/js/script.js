@@ -2,7 +2,7 @@ const menuButton = document.querySelector("#menuButton")
 const menu = document.querySelector("#menu")
 
 document.querySelector(".time").innerHTML = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	new Date()
+    new Date()
 );
 
 document.querySelector("#last-update").innerHTML = document.lastModified
@@ -14,27 +14,34 @@ const togleMenu = (event) => {
     } else {
         event.target.innerText = "\u2630"
     }
-    console.log(event.target)
-} 
+}
+
+const displayMessage = () => {
+    let today = new Date()
+    console.log("hoy no es ni martes ni jueves")
+    document.querySelector("#announce").classList.toggle("anounceOpen")
+}
+
+displayMessage()
 
 const getWeather = () => {
     fetch("https://fcc-weather-api.glitch.me/api/current?lat=14.628434&lon=-90.522713")
-    .then(response => response.json())
-    .then(data => {
-        console.log(data)
-        let weatherCity = document.querySelector("#weatherCity")
-        let weatherTemperature = document.querySelector("#weatherTemperature")
-        let description = document.querySelector("#description")
-        let weatherIcon = document.querySelector("#weatherIcon")
-        let windspeed = document.querySelector("#windspeed")
-        let winddeg = document.querySelector("#winddeg")
-        
-        weatherIcon.setAttribute("src", data.weather[0].icon)
-        weatherCity.textContent = data.name
-        weatherTemperature.textContent = `${data.main.temp}°`
-        description.textContent = data.weather[0].description
-        windspeed.textContent = data.wind.speed
-        winddeg.textContent = data.wind.deg
-        
-    })  
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            let weatherCity = document.querySelector("#weatherCity")
+            let weatherTemperature = document.querySelector("#weatherTemperature")
+            let description = document.querySelector("#description")
+            let weatherIcon = document.querySelector("#weatherIcon")
+            let windspeed = document.querySelector("#windspeed")
+            let winddeg = document.querySelector("#winddeg")
+
+            weatherIcon.setAttribute("src", data.weather[0].icon)
+            weatherCity.textContent = data.name
+            weatherTemperature.textContent = `${data.main.temp}°`
+            description.textContent = data.weather[0].description
+            windspeed.textContent = data.wind.speed
+            winddeg.textContent = data.wind.deg
+
+        })
 } 
