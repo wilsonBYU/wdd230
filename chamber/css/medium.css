@@ -6,6 +6,7 @@
     
     main {
         gap: 1em;
+        grid-template-columns: repeat(3, 1fr);
     }
     main > section:nth-child(1) {
         grid-column: 1/4 ;
@@ -31,6 +32,26 @@
         grid-column: 1/4 ;
         grid-row: 3/4;
         height: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    main > section:nth-child(6) > section:nth-child(3) {
+        display: none;
+    }
+    
+    #weather > #weatherIcon {
+        width: 50px;
+        margin: 0 auto;
+    }
+    
+    #hero > h3 {
+        font-size: 3em;
+    }
+    
+    
+    #join > button {
+        margin-bottom: 0;
     }
     
     footer {

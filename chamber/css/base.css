@@ -17,6 +17,14 @@ p, li, a, span {
     font-family: 'Roboto Slab', serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
+hr {
+    margin: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -85,12 +93,14 @@ header > nav {
 .open {
     opacity: 100%;
     height: auto;
+    z-index: 2;
 }
 
 header > nav > ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+
 }
 
 header > nav > ul > li > a {
@@ -128,6 +138,7 @@ header > .time {
 main {
     padding: 0.5em;
     display: grid;
+    grid-template-columns: 1fr;
     row-gap: 1em;
 }
 
@@ -162,15 +173,106 @@ main > section:nth-child(6) {
     height: auto;
 }
 
+#weather {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#weather > #weatherIcon {
+    width: 50px;
+    margin: 0 auto;
+}
+
+#weather > #weatherTemperature {
+    margin: 0;
+    font-size: 2em;
+}
+
+#description, #wind {
+    margin: 0.5em;
+}
+
+#wind {
+    font-size: 0.75em;
+}
+
+#hero {
+    background-image: url("../images/jumbotron.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#hero > h3 {
+    color: white;
+    font-size: 2em;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    text-align: center;
+}
+
+#join {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#join > p {
+    margin-top: 1em;
+}
+
+#hero > button,
+#join > button {
+    padding: 1em 2em;
+    border: none;
+    background-color: var(--button-hover-color);
+    border-radius: 5px;
+    position: absolute;
+}
+
+#hero > button {
+    bottom: 1em;
+    right: 1em;
+}
+
+#join > button {
+    display: block;
+    position: relative;
+    margin-bottom: 3em;
+}
+
+#hero > button:hover,
+#join > button:hover {
+    background-color: var(--header3-color);
+    cursor: pointer;
+}
+
+#event, #newsRelease {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 main > section:nth-child(6) > section {
-    height: 200px;
     border: 1px solid var(--border-color);
     margin-bottom: 1em;
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-main > section:nth-child(6) > section > h4 {
-    margin: 0;
+main > section:nth-child(6) > section > img {
+    width: 50%;
 }
 
 footer {

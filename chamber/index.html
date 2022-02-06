@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <title>Guatemala Chamber of Commerce - WDD210</title>
 </head>
-<body>
+<body onload="getWeather()">
     <header>
         <div class="logo-container">
             <img src="images/logo.png" alt="Guatemala chamber of commerce logo">
@@ -23,10 +23,10 @@
         </div>
         <nav id="menu">
             <ul>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#event">Discover</a></li>
+                <li><a href="#directory">Directory</a></li>
+                <li><a href="#join">Join</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="social">
@@ -37,30 +37,57 @@
         <div class="time"></div>
     </header>
     <main>
-        <section>
-            <h4>Hero with site name and call to action</h4>
+        <section id="hero">
+            <h3>Welcome to Guatemala</h3>
+            <button>Join the chamber</button>
         </section>
-        <section>
-            <h4>Event</h4>
+        <section id="event">
+            <h4>🎵 Marimba Orchestra</h4>
+            <p>Come and get some fun listening to the best marimba orchestra and enjoy the best local food prepared by the best local chefs. <a href="#">more info</a></p>
+            <hr>
+            <p>
+                Date: 06/15/2022 <br>
+                Time: 16:30 <br>
+                Location: Hipodromo del norte, Z2 Guatemala
+            </p>
+            
         </section>
-        <section>
-            <h4>Weater</h4>
+        <section id="weather">
+            <h4 id="weatherCity"></h4>
+            <img src="" alt="weather icon" id="weatherIcon">
+            <h2 id="weatherTemperature"></h2>
+            <p id="description"></p>
+            <p id="wind">
+                Wind speed: <span id="windspeed"></span> <br>
+                Wind deg: <span id="winddeg"></span>
+            </p>
+            
         </section>
-        <section>
-            <h4>Join</h4>
+        <section id="join">
+            <h4>Join us</h4>
+            <p>Join us if you are insteresting in created a better and large contact network that will benefit your company.</p>
+            <button>Join us!</button>
         </section>
-        <section>
-            <h4>News Release</h4>
+        <section id="newsRelease">
+            <h4>Guatemala exports increase by 15%</h4>
+            <p>Guatemala's exports visibly improved since the country's entry in the Free Trade Area of the Americas in 2004. Guatemala mainly exports coffee and clothes, each representing 12 percent of total exports. Other exports include: sugar, banana and precious metals. Guatemala's mains export partner is the United States (40 percent of exports). Others include: Mexico, El Salvador, Honduras and the Euro Area.</p>
+            <a href="#">read more</a>
         </section>
-        <section>
-            <section>
-                <h4>Spotlight 1</h4>
+        <section id="directory">
+            <section id="spotlight1">
+                <img src="images/carrotsandapples.png" alt="Carrots and apples store">
+                <p>Enjoy the most fresh fruits and vegetables. And if you feel that's amazing please visit us, we have the option for you to select your own fruits or veggies from the trees!</p>
+                <a href="#">more info</a>
             </section>
-            <section>
-                <h4>Spotlight 2</h4>
+            <section id="spotlight1">
+                <img src="images/quicky.png" alt="Quicky delivery service">
+                <p>With more than 10 years in the delivery industry Quicky has many things to offer. Feel free to contact us to deliver your goods!</p>
+                <a href="#">more info</a>
             </section>
-            <section>
-                <h4>Spotlight 3</h4>
+            <section id="spotlight1">
+                <img src="images/thegrocery.png" alt="The grocery store logo">
+                <p>From cans of meat to the most tasty food. The best is that you don't need to wait in a queue, we offer local delivery as well. Feel free to contact us and put your order, no matter if you wan to pick it up or wanted to be delivered to you.</p>
+                <a href="#">more info</a>
             </section>
         </section>
 
@@ -68,7 +95,7 @@
     <footer>
         <div class="img-container">
             <img src="images/logo.png" alt="Guatemala chamber of commerce logo">
-            <div class="logo-text">
+            <div class="logo-text" id="contact">
                 <h1>Guatemala</h1>
                 <h2>Chamber of Commerce</h2>
                 <span>32 Ave. 8-67, Zone 1</span>

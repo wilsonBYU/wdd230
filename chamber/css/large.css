@@ -1,4 +1,5 @@
 @media only screen and (min-width: 60em) {
+
     header > .logo-container {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -51,6 +52,7 @@
     }
     
     main {
+        grid-template-columns: repeat(4,1fr);
         gap: 1em;
     }
     
@@ -86,6 +88,12 @@
     main > section:nth-child(6) {
         grid-column: 4/5;
         grid-row: 1/4;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    main > section:nth-child(6) > section:nth-child(3) {
+        display: block;
     }
     
 }

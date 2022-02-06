@@ -16,3 +16,25 @@ const togleMenu = (event) => {
     }
     console.log(event.target)
 } 
+
+const getWeather = () => {
+    fetch("https://fcc-weather-api.glitch.me/api/current?lat=14.628434&lon=-90.522713")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+        let weatherCity = document.querySelector("#weatherCity")
+        let weatherTemperature = document.querySelector("#weatherTemperature")
+        let description = document.querySelector("#description")
+        let weatherIcon = document.querySelector("#weatherIcon")
+        let windspeed = document.querySelector("#windspeed")
+        let winddeg = document.querySelector("#winddeg")
+        
+        weatherIcon.setAttribute("src", data.weather[0].icon)
+        weatherCity.textContent = data.name
+        weatherTemperature.textContent = `${data.main.temp}°`
+        description.textContent = data.weather[0].description
+        windspeed.textContent = data.wind.speed
+        winddeg.textContent = data.wind.deg
+        
+    })  
+} 
