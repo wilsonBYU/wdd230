@@ -45,11 +45,10 @@
         margin: 0 auto;
     }
     
-    #hero > h3 {
+    #hero > div > h3 {
         font-size: 3em;
     }
-    
-    
+     
     #join > button {
         margin-bottom: 0;
     }

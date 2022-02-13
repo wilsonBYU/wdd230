@@ -13,11 +13,10 @@
     <title>Guatemala Chamber of Commerce - WDD210</title>
 </head>
 <body onload="getWeather(); displayMessage()">
-    <div id="announce">
+    <div id="announce" class="anounceOpen">
         <p>
             🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
         </p>
-        <span onclick="displayMessage()">x</span>
     </div>
     <header>
         <div class="logo-container">
@@ -36,16 +35,25 @@
             </ul>
         </nav>
         <div class="social">
-            <a href="#"><img src="images/Facebook-logo.png" alt="social1"></a>
-            <a href="#"><img src="images/LinkedIn_icon.png" alt="social2"></a>
+            <a href="#"><img src="images/facebook.png" alt="social1"></a>
+            <a href="#"><img src="images/linkedin.png" alt="social2"></a>
         </div>
         <button id="menuButton" onclick="togleMenu(event)">&#9776;</button>
         <div class="time"></div>
     </header>
     <main>
         <section id="hero">
-            <h3>Welcome to Guatemala</h3>
-            <button>Join the chamber</button>
+            <div>
+                <h3>Welcome to Guatemala</h3>
+                <button>Join the chamber</button>
+            </div>
+            <picture>
+                <source media="(max-width: 37.5em)" srcset="images/wdd230-org-small.jpg">
+                <source media="(max-width: 60em)" srcset="images/wdd230-org-medium.jpg">
+                <source media="(min-width: 60em)" srcset="images/wdd230-org-large.jpg">
+                <img src="images/wdd230-org-large.jpg" alt="Hero image background">
+            </picture>
+
         </section>
         <section id="event">
             <h4>🎵 Marimba Orchestra</h4>

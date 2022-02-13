@@ -42,13 +42,32 @@
         height: 100%;
     }
     
+    #hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #hero > picture {
+        height: 100%;
+        width: auto;
+               
+    }
+    
+    #hero > picture > * {
+        height: 100%;
+        width: auto;
+        align-self: center;
+    }
+    
+    
     .social {
         grid-column: 3/4;
         grid-row: 1/2 ;
     }
     
     .social > a > img {
-        height: 50px;
+        height: 40px;
     }
     
     main {
