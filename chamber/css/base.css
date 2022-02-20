@@ -270,11 +270,13 @@ main > section:nth-child(6) {
 
 main > #gallery {
     height: auto;
+    
 }
 
 #gallery > picture {
     margin: 2em 0;
     display: block;
+    overflow: hidden;
 }
 
 #gallery > picture > img[data-src] {
@@ -288,6 +290,10 @@ main > #gallery {
     opacity: 100%;
     transform: translateY(0);
     transition: opacity 1s ease, transform 1s ease;
+}
+
+#gallery > picture > img:hover {
+    transform: scale(105%);
 }
 
 #gallery > picture > p {
