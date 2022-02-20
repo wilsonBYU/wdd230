@@ -230,7 +230,7 @@ main > section:nth-child(6) {
 
 }
 
-#hero > div  {
+#hero > div {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -238,7 +238,7 @@ main > section:nth-child(6) {
     
 }
 
-#hero > picture {
+#hero > picture, #gallery > picture {
     height: auto;
     width: 100%;
     margin: 0;
@@ -247,7 +247,7 @@ main > section:nth-child(6) {
     z-index: 0;
 }
 
-#hero > picture > * {
+#hero > picture > img, #gallery > picture > img {
     width: 100%;
     height: auto;
 }
@@ -268,32 +268,6 @@ main > section:nth-child(6) {
     align-items: center;
 }
 
-main > #gallery {
-    height: auto;
-}
-
-#gallery > picture {
-    margin: 2em 0;
-    display: block;
-}
-
-#gallery > picture > img[data-src] {
-    transform: translateY(50px);
-    opacity: 50%;
-}
-
-#gallery > picture > img {
-    width: 100%;
-    height: auto;
-    opacity: 100%;
-    transform: translateY(0);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-#gallery > picture > p {
-    margin: 0;
-    opacity: 0.5;
-}
 
 
 #join > p {

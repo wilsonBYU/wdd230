@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+
+header {
+    border: 1px solid transparent;
+    background-color: rgb(233, 233, 233);
+}
+
+header > h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > picture {
+    margin: 5em 0;
+}
+
+
+img[data-src] {
+    filter: blur(0.5em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 1s ease;
+}
+
