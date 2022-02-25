@@ -25,7 +25,8 @@ caption, tfoot {
 caption {
     font-size: 2em;
     font-weight: bold;
-    width: 100%;
+    border: 2px solid rgb(177, 177, 177);
+    border-bottom: none;
 }
 
 th, td {
