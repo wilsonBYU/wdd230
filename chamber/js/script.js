@@ -44,3 +44,15 @@ const getWeather = () => {
 
         })
 } 
+
+const modalContainer = document.querySelectorAll(".modalToggler")
+
+modalContainer.forEach(element => {
+    element.addEventListener("click", () => {
+        document.querySelector(".memberModal").classList.toggle("hide")
+    })
+})
+
+const addDate = () => {
+    document.getElementById('#formLoadDate').defaultValue = Date().toDateInputValue();
+}

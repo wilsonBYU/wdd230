@@ -115,4 +115,32 @@
         display: block;
     }
     
+    main form {
+        grid-column: 2/4;
+        padding: 2em;
+    }
+    
+    .memberContainer {
+        width: 50%;
+    }
+    
+    .memberDetail {
+        padding: 3em;
+    }
+    
+    .memberDetail .imgContainer {
+        width: 20%;
+    }
+    
+    .memberDetail {
+        flex-direction: row;
+    }
+    
+    .memberDetail .details {
+        text-align: left;
+        padding: 0;
+        margin-left: 2em;
+    }
+    
+    
 }
