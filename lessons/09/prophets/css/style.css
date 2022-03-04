@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header > h1{
+    width: 100%;
+    background-color: teal;
+    padding: 2em 0;
+    margin: 0;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 10px black;
+}
+
+main > div.cards {
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    z-index: 1;
+    background-color: rgb(199, 199, 178);
+}
+
+main > div.cards > section {
+    width: 350px;
+    padding: 0.3em;
+    margin: 1em;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: space-around;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: beige;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+main > div.cards > section > p {
+    margin: 0;
+}
+
+main > div.cards > section > img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: teal;
+    text-align: center;
+}
