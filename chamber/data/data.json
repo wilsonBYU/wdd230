@@ -1,0 +1,88 @@
+{
+    "data": [
+        {
+            "name": "Agencias Way",
+            "address": "35 ave 5-75 Z4, Guatemala",
+            "phone": "5485-5895",
+            "website": "https://agenciaswayonline.com/",
+            "logo": "https://wilsonbyu.github.io/wdd230/chamber/images/business/agenciasway.webp"
+        },
+        {
+            "name": "Abuelitos Heladeros",
+            "address": "79 ave 3-94 Z3, Guatemala",
+            "phone": "3549-8457",
+            "website": "https://www.facebook.com/abuelitosheladeros/",
+            "logo": "https://wilsonbyu.github.io/wdd230/chamber/images/business/abuelitos.webp"
+        },
+        {
+            "name": "Azucar Cañareal",
+            "address": "15 ave 4-35 Z1, Guatemala",
+            "phone": "3465-4684",
+            "website": "http://azucarcanareal.com/",
+            "logo": "https://wilsonbyu.github.io/wdd230/chamber/images/business/cañareal.webp"
+        },
+        {
+            "name": "Cultura Digital",
+            "address": "3 ave 4-57 Z6, Guatemala",
+            "phone": "9764-3185",
+            "website": "https://www.culturadigital.com.gt/",
+            "logo": "https://wilsonbyu.github.io/wdd230/chamber/images/business/culturadigital.webp"
+        },
+        {
+            "name": "Despensa Familiar",
+            "address": "22 ave 6-15 Z15, Guatemala",
+            "phone": "3164-9725",
+            "website": "https://maxidespensa.com.gt/",
+            "logo": "https://wilsonbyu.github.io/wdd230/chamber/images/business/despensa.webp"
+        },
+        {
+            "name": "La Barata",
+            "address": "21 ave 9-12 Z12, Guatemala",
+            "phone": "7485-9612",
+            "website": "https://maxidespensa.com.gt/",
+            "logo": "https://wilsonbyu.github.io/wdd230/chamber/images/business/laBarata.webp"
+        },
+        {
+            "name": "La Curacao",
+            "address": "3 ave 6-95 Z3, Guatemala",
+            "phone": "3614-2589",
+            "website": "https://www.lacuracaonline.com/guatemala/",
+            "logo": "https://wilsonbyu.github.io/wdd230/chamber/images/business/laCuracao.webp"
+        },
+        {
+            "name": "La Torre",
+            "address": "5 ave 12-5 Z3, Guatemala",
+            "phone": "6598-3214",
+            "website": "https://www.latorre.com.gt/",
+            "logo": "https://wilsonbyu.github.io/wdd230/chamber/images/business/laTorre.webp"
+        },
+        {
+            "name": "Masesa",
+            "address": "30st 5-74 Z7, Guatemala",
+            "phone": "7436-9137",
+            "website": "https://www.masesa.com/",
+            "logo": "https://wilsonbyu.github.io/wdd230/chamber/images/business/masesa.webp"
+        },
+        {
+            "name": "Super Fresh",
+            "address": "9st 3-45 Z5, Guatemala",
+            "phone": "3647-9674",
+            "website": "https://www.superfresh.com.gt/",
+            "logo": "https://wilsonbyu.github.io/wdd230/chamber/images/business/miSuperFresh.webp"
+        },
+        {
+            "name": "Owasp Chapter Guatemala",
+            "address": "15th St 9-45 Z1, Guatemala",
+            "phone": "1496-4769",
+            "website": "https://owasp.org/www-chapter-guatemala/",
+            "logo": "https://wilsonbyu.github.io/wdd230/chamber/images/business/owaspgt.webp"
+        },
+        {
+            "name": "Grupo Terranova",
+            "address": "9th St 6-45 Z1, Guatemala",
+            "phone": "3298-8721",
+            "website": "https://terranovagt.com/",
+            "logo": "https://wilsonbyu.github.io/wdd230/chamber/images/business/terranova.webp"
+        }
+    ]
+}

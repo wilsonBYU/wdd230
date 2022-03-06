@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of commerce website assignment for BYU-I WDD-230" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>Guatemala Chamber of Commerce - WDD210</title>
+</head>
+<body onload="getWeather(); displayMessage()">
+    <div id="announce" class="anounceOpen">
+        <p>
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </p>
+    </div>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Guatemala chamber of commerce logo">
+            <div class="logo-text">
+                <h1>Guatemala</h1>
+                <h3>Chamber of Commerce</h3>
+            </div>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#directory">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="#"><img src="images/facebook.png" alt="social1"></a>
+            <a href="#"><img src="images/linkedin.png" alt="social2"></a>
+        </div>
+        <button id="menuButton" onclick="togleMenu(event)">&#9776;</button>
+        <div class="time"></div>
+    </header>
+    <main>
+        <section id="directory">
+            <div>
+                <button>Card View</button>
+                <button>List View</button>
+            </div>
+            <div id="cardData"></div>
+            <div id="tableData"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="img-container">
+            <img src="images/logo.png" alt="Guatemala chamber of commerce logo">
+            <div class="logo-text" id="contact">
+                <h1>Guatemala</h1>
+                <h2>Chamber of Commerce</h2>
+                <span>32 Ave. 8-67, Zone 1</span>
+                <span>Guatemala, Guatemala, 01001</span>
+            </div>
+        </div>
+        <p>
+            <span>info@guatemalachamberofcommerce.org</span>
+            <span>(+502)1111-1111</span>
+            <span>📍 Location Map</span>
+        </p>
+        <hr>
+        <p>
+            <span>&copy; 2022 Guatemala Chamber of Commerce</span>
+            <span><strong>Wilson Romero</strong></span>
+            <span>WDD 230 Project</span>
+            <span>
+                Last Modifictation: <span id="last-update"></span> 
+            </span>
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/lastvisit.js"></script>
+</body>
+</html>

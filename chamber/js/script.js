@@ -1,3 +1,4 @@
+// Script to control the menu behavior
 const menuButton = document.querySelector("#menuButton")
 const menu = document.querySelector("#menu")
 
@@ -16,6 +17,7 @@ const togleMenu = (event) => {
     }
 }
 
+// Script to control if a message should display or not
 const displayMessage = () => {
     let today = new Date()
     if ((today.getDay() !== 2) && (today.getDay() !== 4)) {
@@ -24,6 +26,7 @@ const displayMessage = () => {
     }
 }
 
+// Get the weather from an api and render it in the page
 const getWeather = () => {
     fetch("https://fcc-weather-api.glitch.me/api/current?lat=14.628434&lon=-90.522713")
         .then(response => response.json())
@@ -45,6 +48,8 @@ const getWeather = () => {
         })
 } 
 
+
+//Modal handler
 const modalContainer = document.querySelectorAll(".modalToggler")
 
 modalContainer.forEach(element => {
@@ -53,6 +58,7 @@ modalContainer.forEach(element => {
     })
 })
 
+//Date to input
 const addDate = () => {
     document.getElementById('#formLoadDate').defaultValue = Date().toDateInputValue();
 }
