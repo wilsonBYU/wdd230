@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <title>Guatemala Chamber of Commerce - WDD210</title>
 </head>
-<body onload="getWeather(); displayMessage()">
+<body onload="getWeather(); displayMessage();initialTogle()">
     <div id="announce" class="anounceOpen">
         <p>
             🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
@@ -42,13 +42,13 @@
         <div class="time"></div>
     </header>
     <main>
-        <section id="directory">
-            <div>
-                <button>Card View</button>
-                <button>List View</button>
+        <section id="directoryContainer">
+            <div id="buttonContainer">
+                <button id="viewCards" onclick="toggle()">&#9783;</button>
+                <button id="viewTable" onclick="toggle()">&#9776;</button>
             </div>
-            <div id="cardData"></div>
-            <div id="tableData"></div>
+            <div class="cardData"></div>
+            <div class="tableData"></div>
         </section>
     </main>
     <footer>

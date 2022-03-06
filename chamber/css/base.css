@@ -552,8 +552,86 @@ footer > p {
     align-items: center;
 }
 
+/* Directory view */
+
+.hidden {
+    display: none !important;
+}
+
+main > #directoryContainer {
+    grid-column: 1/5;
+    height: auto;
+}
+
+main > #directoryContainer > #buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+main > #directoryContainer > #buttonContainer * {
+    border: 1px solid var(--button-hover-color);
+    color: var(--button-hover-color);
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+main > section#directoryContainer > div.cardData > section.cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid gray;
+    max-width: 100%;
+}
+
+main > section#directoryContainer > div.cardData > section.cardContainer > img {
+    display: none;
+}
+main > section#directoryContainer > div.cardData > section.cardContainer > p {
+    padding: 0;
+    margin: 0;
+}
+main > section#directoryContainer > div.cardData > section.cardContainer > h3 {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+main > section#directoryContainer > div.cardData > section.cardContainer > a {
+    margin: 1em;
+}
 
 
+main > section#directoryContainer > div.tableData  {
+    margin: 3em 0;
+}
 
+main > section#directoryContainer > div.tableData > table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
 
+main > section#directoryContainer > div.tableData > table > tr {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
+}
 
+main > section#directoryContainer > div.tableData > table > tr:nth-child(odd) {
+    background-color: var(--button-hover-color);
+}
+
+main > section#directoryContainer  > div.tableData > table > tr > td {
+    padding: 1em;
+}
+
+.hidden {
+    display: none;
+}

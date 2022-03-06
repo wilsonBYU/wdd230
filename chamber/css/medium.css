@@ -102,5 +102,26 @@
         margin: 1em;
     }
     
+    main > section#directoryContainer > div.cardData > section.cardContainer {
+        max-width: 300px;    
+    } 
+    
+    main > section#directoryContainer > div.cardData > section.cardContainer > img {
+        display: block;
+        max-width: 75%;
+    }
+    
+    main > section#directoryContainer > div.tableData > table > tr {
+        display: table-row;
+
+    }
+
+    main > section#directoryContainer > div.cardData {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
 
 }

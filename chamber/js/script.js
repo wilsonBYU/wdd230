@@ -62,3 +62,91 @@ modalContainer.forEach(element => {
 const addDate = () => {
     document.getElementById('#formLoadDate').defaultValue = Date().toDateInputValue();
 }
+
+//Controls the api call for the business info
+const cardData = document.querySelector(".cardData")
+const tableData = document.querySelector(".tableData")
+const cardButton = document.querySelector("#viewCards")
+const tableButton = document.querySelector("#viewTable")
+
+let jsonData
+let apiAddress = "https://wilsonbyu.github.io/wdd230/chamber/data/data.json"
+
+fetch(apiAddress)
+.then(res => res.json())
+.then(data => {
+    updateCards(data)
+    updateTable(data)
+})
+
+
+const updateCards = (dataset) => {
+    dataset.data.forEach(data => {
+        const cardContainer = document.createElement("section")
+        const cardImage = document.createElement("img")
+        const cardName = document.createElement("h3")
+        const cardAddress = document.createElement("p")
+        const cardPhone = document.createElement("p")
+        const cardWebsite = document.createElement("a")
+        
+        
+        cardContainer.classList.add("cardContainer")
+        cardImage.setAttribute("src", data.logo)
+        cardName.textContent = data.name
+        cardAddress.textContent = data.address
+        cardPhone.textContent = data.phone
+        cardWebsite.textContent = "Visit page"
+        cardWebsite.setAttribute("href", data.website)
+        
+        cardContainer.append(cardImage, cardName, cardAddress, cardPhone, cardWebsite)
+        cardData.appendChild(cardContainer)
+    })
+}
+
+const updateTable = (dataset) => {
+    const table = document.createElement("table")
+    dataset.data.forEach(data => {
+        const tr = document.createElement("tr")
+        const nameTd = document.createElement("td")
+        const addressTd = document.createElement("td")
+        const phoneTd = document.createElement("td")
+        const webUrl = document.createElement("a")
+        const websiteTd = document.createElement("td")
+        
+        nameTd.textContent = data.name
+        addressTd.textContent = data.address
+        
+        webUrl.setAttribute("href", data.website)
+        webUrl.textContent = data.website
+        websiteTd.appendChild(webUrl)
+        phoneTd.textContent = data.phone
+        
+        tr.append(nameTd, addressTd, phoneTd, websiteTd)
+        table.appendChild(tr)
+        
+    })
+    tableData.appendChild(table)
+}
+
+const togleDirectoryCards = () => {
+    cardData.classList.toggle("hidden")
+    tableButton.classList.toggle("hidden")
+}
+
+const togleDirectoryTables = () => {
+    cardButton.classList.toggle("hidden")
+    tableData.classList.toggle("hidden")
+}
+
+const initialTogle = () => {
+    if (window.innerWidth > 960) {
+        togleDirectoryTables()
+    } else {
+        togleDirectoryCards()
+    }
+}
+
+const toggle = () => {
+    togleDirectoryCards()
+    togleDirectoryTables()
+}
