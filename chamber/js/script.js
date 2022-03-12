@@ -28,7 +28,7 @@ const displayMessage = () => {
 
 // Get the weather from an api and render it in the page
 const getWeather = () => {
-    fetch("http://api.openweathermap.org/data/2.5/weather?id=3598132&units=metric&appid=2f4da8fb1f6d9955ed9fe6bd18c92e85")
+    fetch("https://api.openweathermap.org/data/2.5/weather?id=3598132&units=metric&appid=2f4da8fb1f6d9955ed9fe6bd18c92e85")
         .then(response => response.json())
         .then(data => {
             const icon = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
