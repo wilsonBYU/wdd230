@@ -28,25 +28,35 @@ const displayMessage = () => {
 
 // Get the weather from an api and render it in the page
 const getWeather = () => {
-    fetch("https://fcc-weather-api.glitch.me/api/current?lat=14.628434&lon=-90.522713")
+    fetch("http://api.openweathermap.org/data/2.5/weather?id=3598132&units=metric&appid=2f4da8fb1f6d9955ed9fe6bd18c92e85")
         .then(response => response.json())
         .then(data => {
+            const icon = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
             let weatherCity = document.querySelector("#weatherCity")
             let weatherTemperature = document.querySelector("#weatherTemperature")
             let description = document.querySelector("#description")
             let weatherIcon = document.querySelector("#weatherIcon")
             let windspeed = document.querySelector("#windspeed")
-            let winddeg = document.querySelector("#winddeg")
+            let windChill = document.querySelector("#windChill")
 
-            weatherIcon.setAttribute("src", data.weather[0].icon)
+            weatherIcon.setAttribute("src", icon)
             weatherCity.textContent = data.name
-            weatherTemperature.textContent = `${data.main.temp}°`
-            description.textContent = data.weather[0].description
+            weatherTemperature.textContent = `${data.main.temp}°c`
+            description.textContent = data.weather[0].main
             windspeed.textContent = data.wind.speed
-            winddeg.textContent = data.wind.deg
-
+            windChill.textContent = calcWindChill(data.main.temp, data.wind.speed)
         })
 } 
+
+const calcWindChill = (degi, windi) => {
+    const deg = parseFloat(degi)
+    const wind = parseFloat(windi)
+    if (deg <= 10 && wind > 3) {
+        return `${13.12 + 0.6215*deg - 11.37 (wind^0.16) + 0.3965*deg (wind^0.16)}m/s`
+    } else {
+        return "N/A"
+    }
+}
 
 
 //Modal handler
