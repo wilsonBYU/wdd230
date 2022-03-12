@@ -635,3 +635,9 @@ main > section#directoryContainer  > div.tableData > table > tr > td {
 .hidden {
     display: none;
 }
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--header3-color);
+}
