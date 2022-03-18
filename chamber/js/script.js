@@ -79,15 +79,19 @@ const tableData = document.querySelector(".tableData")
 const cardButton = document.querySelector("#viewCards")
 const tableButton = document.querySelector("#viewTable")
 
-let jsonData
-let apiAddress = "https://wilsonbyu.github.io/wdd230/chamber/data/data.json"
+const handleCards = () => {
+    
+    let jsonData
+    let apiAddress = "https://wilsonbyu.github.io/wdd230/chamber/data/data.json"
+    
+    fetch(apiAddress)
+    .then(res => res.json())
+    .then(data => {
+        updateCards(data)
+        updateTable(data)
+    })
+}
 
-fetch(apiAddress)
-.then(res => res.json())
-.then(data => {
-    updateCards(data)
-    updateTable(data)
-})
 
 
 const updateCards = (dataset) => {
