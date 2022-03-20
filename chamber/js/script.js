@@ -176,7 +176,6 @@ const getRandomData = () => {
     const addInfo = (spotName, datas) => {
         const data = datas[0]
         const el = document.querySelector("#"+spotName)
-        console.log(el)
         const img = document.createElement("img")
         img.setAttribute("src", data.logo)
         img.setAttribute("alt", data.name)
