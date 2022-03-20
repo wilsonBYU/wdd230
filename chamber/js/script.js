@@ -165,21 +165,52 @@ const toggle = () => {
     togleDirectoryTables()
 }
 
-const getRandomData = (elements) => {
+const getRandomData = () => {
     let apiAddress = "https://wilsonbyu.github.io/wdd230/chamber/data/data.json"
-    const element = document.querySelector(elements)
     
+    const random = (data) => {
+        let randomNumber = Math.floor(Math.random() * data.length)
+        return randomNumber
+    } 
     
+    const addInfo = (spotName, datas) => {
+        const data = datas[0]
+        const el = document.querySelector("#"+spotName)
+        console.log(el)
+        const img = document.createElement("img")
+        img.setAttribute("src", data.logo)
+        img.setAttribute("alt", data.name)
+        
+        const slogan = document.createElement("p")
+        slogan.textContent = data.slogan
+        
+        const phone = document.createElement("p")
+        phone.textContent = data.phone
+        
+        const address = document.createElement("p")
+        address.textContent = data.address
+        
+        const website = document.createElement("a")
+        website.setAttribute("href", data.website)
+        website.textContent = "more info"
+        
+        el.appendChild(img)
+        el.appendChild(slogan)
+        el.appendChild(address)
+        el.appendChild(phone)
+        el.appendChild(website)
+    }
     
     fetch(apiAddress)
     .then(res => res.json())
     .then(data => {
         const filtered = data.data.filter(buss => buss.status === "gold" || buss.status === "silver")
-        
-        console.log(filtered)
-        console.log(element)
+        const spot1 = filtered.splice(random(filtered), 1)
+        const spot2 = filtered.splice(random(filtered), 1)
+        const spot3 = filtered.splice(random(filtered), 1)
+        addInfo("spotlight1", spot1)
+        addInfo("spotlight2", spot2)
+        addInfo("spotlight3", spot3)
         
     })
 }
-
-getRandomData("spotlight1")
