@@ -19,7 +19,7 @@ p, li, a, span {
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 hr {
     margin: 0;
@@ -34,7 +34,7 @@ body {
 .anounceOpen {
     background-color: var(--header3-color);
     display: flex;
-    
+
     justify-content: center;
     align-items: center;
     position: relative;
@@ -46,7 +46,7 @@ body {
 
 
 
-#announce > span {
+#announce>span {
     right: 2em;
     font-size: 1.5em;
     cursor: pointer;
@@ -69,22 +69,22 @@ header .logo-container {
 
 }
 
-.logo-container > img {
+.logo-container>img {
     height: 40px;
     width: auto;
 }
 
-.logo-container > .logo-text > h1,
-.logo-container > .logo-text > h3 {
+.logo-container>.logo-text>h1,
+.logo-container>.logo-text>h3 {
     margin: 0;
     padding: 0;
 }
 
-.logo-container > .logo-text > h1 {
+.logo-container>.logo-text>h1 {
     font-size: 1.2em;
 }
 
-.logo-container > .logo-text > h3 {
+.logo-container>.logo-text>h3 {
     font-size: 0.7em;
 }
 
@@ -95,11 +95,11 @@ header .logo-container {
     justify-self: center;
 }
 
-.social > a > img {
+.social>a>img {
     height: 25px;
 }
 
-header > nav {
+header>nav {
     grid-column: 1/4;
     grid-row: 3/4;
     background-color: var(--memu-background-color);
@@ -119,14 +119,14 @@ header > nav {
     z-index: 2;
 }
 
-header > nav > ul {
+header>nav>ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 
 }
 
-header > nav > ul > li > a {
+header>nav>ul>li>a {
     display: block;
     text-align: center;
     padding: 0.5em;
@@ -134,12 +134,12 @@ header > nav > ul > li > a {
     color: var(--header-text-color);
 }
 
-header > nav > ul > li > a:hover {
+header>nav>ul>li>a:hover {
     background-color: var(--button-hover-color);
     color: var(--header-background);
 }
 
-header > button { 
+header>button {
     grid-column: 3/4;
     grid-row: 1/2;
     font-size: 2em;
@@ -148,7 +148,7 @@ header > button {
     color: var(--header-text-color);
 }
 
-header > .time {
+header>.time {
     grid-column: 1/4;
     grid-row: 2/3;
     background-color: var(--memu-background-color);
@@ -167,33 +167,38 @@ main {
     row-gap: 1em;
 }
 
-main > section {
+main>section {
     background-color: var(--header-text-color);
     height: 200px;
     padding: 1em;
     border: 1px solid var(--border-color);
 }
 
-main > section > h4 {
+main>section>h4 {
     margin: 0;
 }
 
-main > section:nth-child(1) {
+main>section:nth-child(1) {
     grid-row: 1/2;
 }
-main > section:nth-child(2) {
+
+main>section:nth-child(2) {
     grid-row: 2/3;
 }
-main > section:nth-child(3) {
+
+main>section:nth-child(3) {
     grid-row: 3/4;
 }
-main > section:nth-child(4) {
+
+main>section:nth-child(4) {
     grid-row: 4/5;
 }
-main > section:nth-child(5) {
+
+main>section:nth-child(5) {
     grid-row: 5/6;
 }
-main > section:nth-child(6) {
+
+main>section:nth-child(6) {
     grid-row: 6/7;
     height: auto;
 }
@@ -205,12 +210,12 @@ main > section:nth-child(6) {
     justify-content: center;
 }
 
-#weather > #weatherIcon {
+#weather>#weatherIcon {
     width: 50px;
     margin: 0 auto;
 }
 
-#weather > #weatherTemperature {
+#weather>#weatherTemperature {
     margin: 0;
     font-size: 2em;
 }
@@ -234,15 +239,15 @@ main > section:nth-child(6) {
 
 }
 
-#hero > div  {
+#hero>div {
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 1;
-    
+
 }
 
-#hero > picture {
+#hero>picture {
     height: auto;
     width: 100%;
     margin: 0;
@@ -251,12 +256,12 @@ main > section:nth-child(6) {
     z-index: 0;
 }
 
-#hero > picture > * {
+#hero>picture>* {
     width: 100%;
     height: auto;
 }
 
-#hero > div > h3 {
+#hero>div>h3 {
     color: white;
     font-size: 2em;
     text-shadow: 0 0 15px rgb(0, 0, 0);
@@ -272,27 +277,27 @@ main > section:nth-child(6) {
     align-items: center;
 }
 
-main > #gallery {
+main>#gallery {
     height: auto;
-    
+
 }
 
 #thankyou {
     padding: 5em 1em;
 }
 
-#gallery > picture {
+#gallery>picture {
     margin: 2em 0;
     display: block;
     overflow: hidden;
 }
 
-#gallery > picture > img[data-src] {
+#gallery>picture>img[data-src] {
     transform: translateY(50px);
     opacity: 50%;
 }
 
-#gallery > picture > img {
+#gallery>picture>img {
     width: 100%;
     height: auto;
     opacity: 100%;
@@ -300,22 +305,22 @@ main > #gallery {
     transition: opacity 1s ease, transform 1s ease;
 }
 
-#gallery > picture > img:hover {
+#gallery>picture>img:hover {
     transform: scale(105%);
 }
 
-#gallery > picture > p {
+#gallery>picture>p {
     margin: 0;
     opacity: 0.5;
 }
 
 
-#join > p {
+#join>p {
     margin-top: 1em;
 }
 
-#hero > div > a,
-#join > a {
+#hero>div>a,
+#join>a {
     padding: 1em 2em;
     border: none;
     background-color: var(--button-hover-color);
@@ -325,19 +330,19 @@ main > #gallery {
     color: black;
 }
 
-#hero > div > a {
+#hero>div>a {
     bottom: 1em;
     right: 1em;
 }
 
-#join > a {
+#join>a {
     display: block;
     position: relative;
     margin-bottom: 3em;
 }
 
-#hero > div > a:hover,
-#join > a:hover {
+#hero>div>a:hover,
+#join>a:hover {
     background-color: var(--header3-color);
     cursor: pointer;
 }
@@ -348,7 +353,7 @@ main > #gallery {
     justify-content: center;
 }
 
-main > section:nth-child(6) > section {
+main>section:nth-child(6)>section {
     border: 1px solid var(--border-color);
     margin-bottom: 1em;
     padding: 1em;
@@ -359,17 +364,17 @@ main > section:nth-child(6) > section {
     text-align: center;
 }
 
-main > section:nth-child(6) > section > img {
+main>section:nth-child(6)>section>img {
     width: 50%;
 }
 
 /* -------------- FORM ------------- */
-main > form {
+main>form {
     background-color: white;
     grid-column: 1/4;
 }
 
-main > form fieldset {
+main>form fieldset {
     border: 1px solid var(--border-color);
     margin: 2em 0.5em;
     border-radius: 5px;
@@ -409,8 +414,7 @@ main form fieldset textarea {
 }
 
 main form fieldset label input:required,
-main form fieldset label input:invalid
- {
+main form fieldset label input:invalid {
     border-bottom: 2px solid var(--header3-color);
 }
 
@@ -422,7 +426,7 @@ main form p {
     color: var(--header-background);
 }
 
-main form p #memDetail, .modalToggler{
+main form p #memDetail, .modalToggler {
     cursor: pointer;
 }
 
@@ -447,7 +451,7 @@ form input[type=submit]:hover {
 
 .memberModal {
     position: fixed;
-    background-color: rgb(0, 0, 0,.75);
+    background-color: rgb(0, 0, 0, .75);
     height: 100%;
     width: 100%;
     margin: -1.5em;
@@ -475,7 +479,7 @@ form input[type=submit]:hover {
     position: absolute;
     font-size: 2rem;
     right: 2%;
-    
+
 }
 
 .memberContainer h2 {
@@ -520,32 +524,32 @@ footer {
     padding: 1em;
 }
 
-footer > .img-container {
+footer>.img-container {
     display: flex;
     justify-content: center;
 }
 
-footer > .img-container > img {
+footer>.img-container>img {
     height: 50px;
     display: inline-block;
     width: auto;
 }
 
-.logo-text > h1,
-.logo-text > h2 {
+.logo-text>h1,
+.logo-text>h2 {
     margin: 0;
     padding: 0;
 }
 
-.logo-text > h1 {
+.logo-text>h1 {
     font-size: 1.4em;
 }
 
-.logo-text > h2 {  
-    font-size: 1em; 
+.logo-text>h2 {
+    font-size: 1em;
 }
 
-footer > p {
+footer>p {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -558,17 +562,17 @@ footer > p {
     display: none !important;
 }
 
-main > #directoryContainer {
+main>#directoryContainer {
     grid-column: 1/5;
     height: auto;
 }
 
-main > #directoryContainer > #buttonContainer {
+main>#directoryContainer>#buttonContainer {
     display: flex;
     justify-content: center;
 }
 
-main > #directoryContainer > #buttonContainer * {
+main>#directoryContainer>#buttonContainer * {
     border: 1px solid var(--button-hover-color);
     color: var(--button-hover-color);
     background-color: transparent;
@@ -578,7 +582,7 @@ main > #directoryContainer > #buttonContainer * {
     cursor: pointer;
 }
 
-main > section#directoryContainer > div.cardData > section.cardContainer {
+main>section#directoryContainer>div.cardData>section.cardContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -589,34 +593,36 @@ main > section#directoryContainer > div.cardData > section.cardContainer {
     max-width: 100%;
 }
 
-main > section#directoryContainer > div.cardData > section.cardContainer > img {
+main>section#directoryContainer>div.cardData>section.cardContainer>img {
     display: none;
 }
-main > section#directoryContainer > div.cardData > section.cardContainer > p {
+
+main>section#directoryContainer>div.cardData>section.cardContainer>p {
     padding: 0;
     margin: 0;
 }
-main > section#directoryContainer > div.cardData > section.cardContainer > h3 {
+
+main>section#directoryContainer>div.cardData>section.cardContainer>h3 {
     margin-top: 1em;
     margin-bottom: 0;
 }
 
-main > section#directoryContainer > div.cardData > section.cardContainer > a {
+main>section#directoryContainer>div.cardData>section.cardContainer>a {
     margin: 1em;
 }
 
 
-main > section#directoryContainer > div.tableData  {
+main>section#directoryContainer>div.tableData {
     margin: 3em 0;
 }
 
-main > section#directoryContainer > div.tableData > table {
+main>section#directoryContainer>div.tableData>table {
     border-collapse: collapse;
     width: 80%;
     margin: 0 auto;
 }
 
-main > section#directoryContainer > div.tableData > table > tr {
+main>section#directoryContainer>div.tableData>table>tr {
     margin: 1em;
     display: flex;
     flex-direction: column;
@@ -624,11 +630,11 @@ main > section#directoryContainer > div.tableData > table > tr {
     align-items: center
 }
 
-main > section#directoryContainer > div.tableData > table > tr:nth-child(odd) {
+main>section#directoryContainer>div.tableData>table>tr:nth-child(odd) {
     background-color: var(--button-hover-color);
 }
 
-main > section#directoryContainer  > div.tableData > table > tr > td {
+main>section#directoryContainer>div.tableData>table>tr>td {
     padding: 1em;
 }
 
@@ -641,3 +647,79 @@ main > section#directoryContainer  > div.tableData > table > tr > td {
     font-weight: bold;
     color: var(--header3-color);
 }
+
+main > #contact {
+    height: auto;
+}
+
+main > #contact>.contact-details>.contact-form>form {
+    display: flex;
+    flex-direction: column;
+}
+
+main>#contact>.contact-details>.contact-form>form>label{
+    display: block;
+    color: #505050;
+    font-size: .8em;
+}
+
+main>#contact>.contact-details>.contact-form>form>label,
+main>#contact>.contact-details>.contact-form>form>input,
+main>#contact>.contact-details>.contact-form>form>textarea {
+    display: block;
+}
+
+main>#contact>.contact-details>.contact-form>form>input[type=text], 
+main>#contact>.contact-details>.contact-form>form>input[type=tel],
+main>#contact>.contact-details>.contact-form>form>input[type=email] {
+    height: 1.5em;
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+    border: 1px solid var(--border-color);
+    color: black;
+}
+
+main>#contact>.contact-details>.contact-form>form>textarea {
+    border: 1px solid var(--border-color);
+    color: black;
+    margin-bottom: 1.5em;
+}
+
+main>#contact>.contact-details>.contact-form>form>input:invalid,
+main>#contact>.contact-details>.contact-form>form>input:required,
+main>#contact>.contact-details>.contact-form>form>textarea:required
+ {
+    border-bottom: 2px solid var(--header3-color);
+}
+main>#contact>.contact-details>.contact-form>form>input:valid
+main>#contact>.contact-details>.contact-form>form>textarea:valid{
+    border-bottom: 2px solid var(--button-hover-color);
+}
+
+main>#contact>.contact-details>.contact-form>.board>.card{
+    margin: 3em 1em;
+}
+
+main>#contact>.contact-details>.contact-form>.board>.card>.card-title {
+    font-weight: bold;
+}
+
+main>#contact>.contact-details>.contact-info {
+    display: block;
+}
+
+main>#contact>.contact-details>.contact-info>table {
+    border-collapse: collapse;
+    width: 100%;
+}
+main>#contact>.contact-details>.contact-info>table>tbody>tr>td,
+main>#contact>.contact-details>.contact-info>table>thead>tr>th {
+    text-align: left;
+    border: 1px solid var(--border-color);
+    
+}
+
+main>#contact>.contact-details>.contact-info>table>tr:nth-child(odd) {
+    background-color: var(--button-hover-color);
+}
+

@@ -123,5 +123,32 @@
         flex-wrap: wrap;
     }
     
+    main > #contact {
+        grid-column: 1/4;
+    }
+    
+    
+    
+    main > #contact > h1 {
+        grid-column: 1/4;
+    }
+    
+    main > #contact > .contact-details > .contact-form {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+    main > #contact > .contact-details > .contact-form > form {
+        grid-column: 1/3;
+        padding-right: 1em;
+    }
+    
+    main > #contact > .contact-details > .contact-form > .board {
+        border-left: 1px solid var(--border-color);;
+        
+    }
+    
+    
+    
 
 }

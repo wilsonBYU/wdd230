@@ -142,7 +142,20 @@
         margin-left: 2em;
     }
     
-
+    main > #contact {
+        grid-column: 1/5;
+    }
     
+    main > #contact > .contact-details > .contact-info {
+        margin: 0 auto;
+        margin-top: 5em;
+        padding-right: 1em;
+        width: 85%;
+    }
+    
+    main > #contact > .contact-details > .contact-form > form {
+        width: 75%;
+        margin: 0 auto;
+    }
     
 }

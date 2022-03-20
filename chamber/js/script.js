@@ -164,3 +164,22 @@ const toggle = () => {
     togleDirectoryCards()
     togleDirectoryTables()
 }
+
+const getRandomData = (elements) => {
+    let apiAddress = "https://wilsonbyu.github.io/wdd230/chamber/data/data.json"
+    const element = document.querySelector(elements)
+    
+    
+    
+    fetch(apiAddress)
+    .then(res => res.json())
+    .then(data => {
+        const filtered = data.data.filter(buss => buss.status === "gold" || buss.status === "silver")
+        
+        console.log(filtered)
+        console.log(element)
+        
+    })
+}
+
+getRandomData("spotlight1")

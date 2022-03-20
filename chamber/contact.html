@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of commerce website assignment for BYU-I WDD-230" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>Guatemala Chamber of Commerce - WDD210</title>
+</head>
+<body onload="getWeather(); displayMessage()">
+    <div id="announce" class="anounceOpen">
+        <p>
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </p>
+    </div>
+    <header>
+        <div class="logo-container">
+            <a href="/chamber/">
+                
+            </a>
+            <img src="images/logo.png" alt="Guatemala chamber of commerce logo">
+            <div class="logo-text">
+                <h1>Guatemala</h1>
+                <h3>Chamber of Commerce</h3>
+            </div>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="/chamber/">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="#"><img src="images/facebook.png" alt="social1"></a>
+            <a href="#"><img src="images/linkedin.png" alt="social2"></a>
+        </div>
+        <button id="menuButton" onclick="togleMenu(event)">&#9776;</button>
+        <div class="time"></div>
+    </header>
+    <main>
+        <section id="contact">
+            <h1>Contact us</h1>
+            <section class="contact-details">        
+                <section class="contact-form">
+                    <form action="thankyou.html">
+                        <label for="name">
+                            Name*
+                        </label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email">
+                            Email*
+                        </label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="tel">
+                            Phone*
+                        </label>
+                        <input type="tel" name="tel" id="tel" required>
+                        <label for="message">
+                            Message*
+                        </label>
+                        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                        <input type="submit" value="Send message">
+                    </form>
+                    <section class="board">
+                        <div class="card">
+                            <div class="card-title">President</div>
+                            <div class="card-name">Rigoberto Paxton</div>
+                            <div class="card-email">rpaxton@guatechamberofcommerce.com</div>
+                            <div class="card-phone">4565-1258</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">Registration officer</div>
+                            <div class="card-name">Juan Urrutia</div>
+                            <div class="card-email">jurrutia@guatechamberofcommerce.com</div>
+                            <div class="card-phone">4565-7854</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">Activities officer</div>
+                            <div class="card-name">Fernanda Mejia</div>
+                            <div class="card-email">fmejia@guatechamberofcommerce.com</div>
+                            <div class="card-phone">4565-3257</div>
+                        </div>
+                    </section>
+                </section>
+                <section class="contact-info">
+                    <h2>Hours and dates</h2>
+                    <p>Feel free to contact us in the following days and schedules. For interviews and activity details please contact the officer of each department.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Open Time</th>
+                                <th>Close Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td>Monday</td>
+                                <td>9:00am</td>
+                                <td>5:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9:00am</td>
+                                <td>5:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>7:00am</td>
+                                <td>1:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Thrusday</td>
+                                <td>7:00am</td>
+                                <td>1:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>8:00am</td>
+                                <td>3:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>Close</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Close</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="img-container">
+            <img src="images/logo.png" alt="Guatemala chamber of commerce logo">
+            <div class="logo-text" id="contact">
+                <h1>Guatemala</h1>
+                <h2>Chamber of Commerce</h2>
+                <span>32 Ave. 8-67, Zone 1</span>
+                <span>Guatemala, Guatemala, 01001</span>
+            </div>
+        </div>
+        <p>
+            <span>info@guatemalachamberofcommerce.org</span>
+            <span>(+502)1111-1111</span>
+            <span>📍 Location Map</span>
+        </p>
+        <hr>
+        <p>
+            <span>&copy; 2022 Guatemala Chamber of Commerce</span>
+            <span><strong>Wilson Romero</strong></span>
+            <span>WDD 230 Project</span>
+            <span>
+                Last Modifictation: <span id="last-update"></span> 
+            </span>
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
